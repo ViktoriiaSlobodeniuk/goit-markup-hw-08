@@ -1,0 +1,46 @@
+:root {
+  /* Шрифти */
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /* Кольори тексту */
+  --main-txt-cl: #212121;
+  --secondary-txt-cl: #757575;
+  --light-txt-cl: #ffffff;
+  --light-txt-cl-60: rgba(255, 255, 255, 0.6);
+  --accent-txt-cl: #2196f3;
+  --placeholder-txt-cl: rgba(117, 117, 117, 0.5);
+
+  /* Кольори фону */
+  --main-bg-cl: #ffffff;
+  --light-bg-cl: #f5f4fa;
+  --dark-bg-cl: #2f303a;
+  --accent-bg-cl: #2196f3;
+  --accent-bg-hover-cl: #188ce8;
+  --overlay-bg-cl: rgba(47, 48, 58, 0.4);
+  --work-ov-bg-cl: rgba(47, 48, 58, 0.8);
+  --pf-ov-bg-cl: rgba(33, 150, 243, 0.9);
+
+  /* Додаткові кольори */
+  --additional-cl: #000000;
+  --top-border-line-cl: #ececec;
+  --portfolio-border-cl: #eeeeee;
+  --btn-border: rgba(0, 0, 0, 0.1);
+  --social-icon-cl: #afb1b8;
+  --social-icon-cl-10: rgba(255, 255, 255, 0.1);
+  --input-border-cl: rgba(33, 33, 33, 0.2);
+
+  /* Тіні */
+  --box-shadow-tm: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --box-shadow-btn: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --box-shadow-btn-hover: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --box-shadow-pf-hover: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  --backdrop-bg-cl: rgba(0, 0, 0, 0.2);
+  --input-ft-border-cl: rgba(255, 255, 255, 0.3);
+
+  /* Переходи */
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

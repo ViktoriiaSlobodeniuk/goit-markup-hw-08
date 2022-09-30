@@ -1,0 +1,38 @@
+// ДОПОМІЖНІ ЗАСОБИ
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+// @import "./utils/mixins";
+
+// БАЗОВІ НАЛАШТУВАННЯ
+@import "./components/reset";
+@import "./components/base";
+@import "./components/container";
+
+// БАГАТОРАЗОВІ КОМПОНЕНТИ
+@import "./components/button";
+@import "./components/logo";
+@import "./components/socials";
+
+// СЕКЦІЇ ОСНОВНОЇ СТОРІНКИ
+@import "./components/header";
+@import "./components/navigation";
+
+@import "./components/hero";
+@import "./components/modal-window";
+@import "./components/register-form";
+
+@import "./components/features";
+
+@import "./components/work";
+
+@import "./components/team";
+
+@import "./components/clients";
+
+@import "./components/footer";
+@import "./components/address";
+@import "./components/subscribe-form";
+
+// ПОРТФОЛІО
+@import "./components/portfolio-filter";
+@import "./components/portfolio-projects";

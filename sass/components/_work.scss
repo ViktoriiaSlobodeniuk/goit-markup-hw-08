@@ -1,0 +1,32 @@
+.section--no_padding-top {
+  padding-top: 0;
+}
+
+.work {
+  display: flex;
+}
+.work__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.work__item {
+  position: relative;
+}
+.work__title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-txt-cl);
+  background: var(--work-ov-bg-cl);
+}
