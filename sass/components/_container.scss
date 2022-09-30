@@ -1,6 +1,19 @@
+// breackpoints
+// mobile 480px
+// tablet 768px
+// descktop 1200px
+
 .container {
-  width: 1200px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 1200px;
+  }
 }
