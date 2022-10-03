@@ -1,8 +1,11 @@
+.subscribe-form__wrop {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 12px;
+  }
+}
 .subscribe-form {
   text-align: center;
-}
-.subscribe-form__wrop {
-  position: relative;
 }
 .subscribe-form__title {
   font-size: inherit;
@@ -43,7 +46,6 @@
 
   @media screen and (min-width: 1200px) {
     width: 358px;
-    margin-right: 12px;
   }
 }
 .subscribe-form-input::placeholder {
@@ -53,22 +55,19 @@
   color: var(--light-txt-cl-60);
 }
 .page__button--subscribe {
-  padding: 10px 62px 10px 28px;
+  padding: 10px 28px;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: block;
-    margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
   }
 }
 
 .subscribe-form__icon {
-  fill: var(--main-bg-cl);
-
-  position: absolute;
-  right: 153px;
-  bottom: 13px;
-
-  @media screen and (min-width: 1200px) {
-    right: 28px;
-  }
+  fill: currentColor;
+  margin-left: 10px;
 }

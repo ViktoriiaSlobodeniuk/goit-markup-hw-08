@@ -763,16 +763,19 @@ a {
 
 .clients__item {
   height: 92px;
-  width: 210px;
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
-    width: 226px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    width: 170px;
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
   }
 }
 
@@ -921,12 +924,17 @@ a {
   color: var(--accent-txt-cl);
 }
 
-.subscribe-form {
-  text-align: center;
+@media screen and (min-width: 1200px) {
+  .subscribe-form__wrop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+  }
 }
 
-.subscribe-form__wrop {
-  position: relative;
+.subscribe-form {
+  text-align: center;
 }
 
 .subscribe-form__title {
@@ -969,7 +977,6 @@ a {
 @media screen and (min-width: 1200px) {
   .subscribe-form__input {
     width: 358px;
-    margin-right: 12px;
   }
 }
 
@@ -1009,25 +1016,27 @@ a {
 }
 
 .page__button--subscribe {
-  padding: 10px 62px 10px 28px;
+  padding: 10px 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .page__button--subscribe {
-    display: block;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 
 .subscribe-form__icon {
-  fill: var(--main-bg-cl);
-  position: absolute;
-  right: 153px;
-  bottom: 13px;
-}
-@media screen and (min-width: 1200px) {
-  .subscribe-form__icon {
-    right: 28px;
-  }
+  fill: currentColor;
+  margin-left: 10px;
 }
 
 .portfolio-filter {
