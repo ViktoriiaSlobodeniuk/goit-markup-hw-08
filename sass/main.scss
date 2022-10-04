@@ -1,7 +1,6 @@
 // ДОПОМІЖНІ ЗАСОБИ
 @import "./utils/variables";
 @import "./utils/visually-hidden";
-// @import "./utils/mixins";
 
 // БАЗОВІ НАЛАШТУВАННЯ
 @import "./components/reset";
@@ -36,3 +35,6 @@
 // ПОРТФОЛІО
 @import "./components/portfolio-filter";
 @import "./components/portfolio-projects";
+
+// АДАПТИВНІ НАЛАШТУВАННЯ
+@import "./components/_menu-burger";

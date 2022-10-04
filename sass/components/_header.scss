@@ -13,27 +13,34 @@
   letter-spacing: 0.02em;
   color: var(--secondary-txt-cl);
 
-  display: flex;
-  margin-left: auto;
-}
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
-.contacts__item {
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    display: flex;
+    gap: 30px;
   }
 }
 
 .contacts__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   transition: color var(--animation);
 
   &:hover,
   &:focus {
     color: var(--accent-txt-cl);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 

@@ -251,14 +251,28 @@ a {
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
   color: var(--secondary-txt-cl);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
 }
-
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .contacts__link {
@@ -268,13 +282,17 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
 }
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-txt-cl);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts__icon {
@@ -1139,4 +1157,11 @@ a {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
+}
+
+@media screen and (max-width: 767px) {
+  .menu-burger {
+    background-color: var(--main-bg-cl);
+    border: none;
+  }
 }/*# sourceMappingURL=main.css.map */
