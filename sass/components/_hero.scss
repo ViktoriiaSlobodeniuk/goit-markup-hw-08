@@ -1,9 +1,14 @@
 .hero {
   background-color: var(--dark-bg-cl);
   text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
 }
 .hero__title {
   font-weight: 900;

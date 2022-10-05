@@ -70,8 +70,8 @@
   border-radius: 4px;
   padding: 12px 16px;
 
-  font-size: 12px;
-  line-height: calc(14 / 12);
+  font-style: 14px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.01em;
 
   transition: border-color var(--animation);
@@ -79,6 +79,11 @@
   &:hover,
   &:focus {
     border-color: var(--accent-bg-cl);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
   }
 }
 
@@ -111,7 +116,12 @@
   background-image: url(../images/icon-check.svg);
   border: transparent;
 }
-
+.register-form__agreement-text {
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+}
 .register-form__link {
   color: var(--accent-txt-cl);
 }

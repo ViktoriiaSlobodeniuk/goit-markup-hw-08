@@ -1,21 +1,24 @@
 .features {
+  display: flex;
+  flex-direction: column;
   gap: 30px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
   }
 }
 .features__item {
+  width: 100%;
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 4);
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 .features__icon-box {

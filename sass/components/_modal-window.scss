@@ -23,8 +23,6 @@
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
   left: 50%;
   top: 50%;
 
@@ -36,6 +34,14 @@
   border-radius: 4px;
 
   padding: 40px;
+
+  width: 450px;
+  height: 609px;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal-close__btn {
   position: absolute;
@@ -57,5 +63,8 @@
   &:hover,
   &:focus {
     fill: var(--accent-bg-cl);
+  }
+  @media screen and (max-width: 400px) {
+    right: 40px;
   }
 }
