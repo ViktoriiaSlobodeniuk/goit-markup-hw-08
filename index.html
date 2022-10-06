@@ -27,56 +27,108 @@
     <!-- Верхня лінія -->
     <header class="header">
       <div class="container header__container">
-        <nav class="navigation">
-          <a class="logo header__logo" href="./index.html"
-            ><span class="logo__blue">Web</span>Studio</a
-          >
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a
-                class="navigation__link navigation__link--active"
-                href="./index.html"
-                >Студія</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a class="contacts__link" href="mailto:info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <a class="logo header__logo" href="./index.html"
+          ><span class="logo__blue">Web</span>Studio</a
+        >
         <button
           type="button"
-          class="menu-burger js-open-menu"
+          class="menu-btn"
           aria-expanded="false"
-          aria-controls="mobile-menu"
+          aria-controls="menu-box"
+          data-menu-button
         >
-          <svg width="40" height="40">
-            <use href="./images/icons.svg#menu_burger"></use>
+          <svg width="40" height="40" aria-level="Перемикач мобільно меню">
+            <use class="icon-cross" href="./images/icons.svg#close_menu"></use>
+            <use
+              class="icon-burger"
+              href="./images/icons.svg#menu_burger"
+            ></use>
           </svg>
         </button>
+        <div class="menu-box" id="menu-box" data-menu>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a
+                  class="navigation__link navigation__link--active"
+                  href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a
+                class="contacts__link contacts__link--mobile-style"
+                href="tel:+380961111111"
+              >
+                <svg class="contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+
+            <li class="contacts__item">
+              <a class="contacts__link" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-socials">
+            <li class="mobile-socials__item">
+              <a
+                href=""
+                class="mobile-socials__link"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-socials__item">
+              <a
+                href=""
+                class="mobile-socials__link"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-socials__item">
+              <a
+                href=""
+                class="mobile-socials__link"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-socials__item">
+              <a
+                href=""
+                class="mobile-socials__link"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+
     <main>
       <!-- Шапка -->
       <section class="hero overlay">
@@ -665,6 +717,15 @@
         </form>
       </div>
     </div>
+    <!-- Скрипт модального вікна -->
     <script src="./js/modal.js"></script>
+    <!-- Скрипт мобільного меню -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
