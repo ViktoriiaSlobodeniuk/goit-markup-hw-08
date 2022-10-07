@@ -280,7 +280,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.1666666667;
     gap: 10px;
@@ -316,7 +315,7 @@ a {
 @media screen and (max-width: 767px) {
   .contacts__link--mobile-style {
     font-size: 34px;
-    letter-spacing: 1.1764705882;
+    line-height: 1.1764705882;
     color: var(--accent-txt-cl);
   }
 }
@@ -360,7 +359,6 @@ a {
 }
 
 .navigation__list {
-  font-weight: 500;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
@@ -1392,7 +1390,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1;
+  z-index: 101;
 }
 @media screen and (max-width: 767px) {
   .menu-btn {
@@ -1452,6 +1450,8 @@ a {
 
 .menu-box {
   width: 100%;
+  z-index: 100;
+  font-weight: 500;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .menu-box {
@@ -1480,7 +1480,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-weight: 500;
   font-size: 18px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;

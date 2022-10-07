@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 101;
 
   @media screen and (max-width: 767px) {
     position: absolute;
@@ -53,6 +53,8 @@
 }
 .menu-box {
   width: 100%;
+  z-index: 100;
+  font-weight: 500;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     align-items: center;
@@ -67,7 +69,7 @@
 
 .mobile-socials {
   display: flex;
-  font-weight: 500;
+  // font-weight: 500;
   font-size: 18px;
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
