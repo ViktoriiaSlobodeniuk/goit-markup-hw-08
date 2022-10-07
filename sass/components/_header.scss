@@ -13,65 +13,59 @@
   letter-spacing: 0.02em;
   color: var(--secondary-txt-cl);
 
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  margin-bottom: 64px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 64px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    gap: 10px;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column-reverse;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 }
+
+.contacts__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+}
+
 .contacts__link--mobile-style {
-  font-size: 34px;
-  letter-spacing: calc(40 / 34);
-  color: var(--accent-txt-cl);
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    letter-spacing: calc(40 / 34);
+    color: var(--accent-txt-cl);
+  }
 }
 .contacts__link:hover,
 .contacts__link:focus {
   color: var(--accent-txt-cl);
 }
-.contacts__icon {
-  display: none;
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  transition: color var(--animation);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
-// .contacts {
-//   font-weight: 500;
-//   line-height: calc(16 / 14);
-//   letter-spacing: 0.02em;
-//   color: var(--secondary-txt-cl);
-
-//   // @media screen and (max-width: 767px) {
-//   //   display: none;
-//   // }
-
-//   @media screen and (min-width: 768px) and (max-width: 1199px) {
-//     margin-left: auto;
-//     display: flex;
-//     flex-direction: column;
-//     gap: 10px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     margin-left: auto;
-//     display: flex;
-//     gap: 30px;
-//   }
-// }
-
-// .contacts__link {
-//   display: flex;
-//   align-items: center;
-
-//   transition: color var(--animation);
-
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-txt-cl);
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//   }
-// }
-
-// .contacts__icon {
-//   margin-right: 10px;
-//   fill: currentColor;
-// }
+.contacts__icon {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  margin-right: 8px;
+  fill: currentColor;
+}
