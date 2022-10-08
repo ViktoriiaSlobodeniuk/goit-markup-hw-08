@@ -8,11 +8,7 @@
 
 .work {
   display: flex;
-}
-.work__item {
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  gap: 30px;
 }
 
 .work__item {
