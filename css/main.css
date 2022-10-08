@@ -587,11 +587,6 @@ a {
 .modal-close__btn:hover, .modal-close__btn:focus {
   fill: var(--accent-bg-cl);
 }
-@media screen and (max-width: 400px) {
-  .modal-close__btn {
-    right: 40px;
-  }
-}
 
 /* Форма модального вікна */
 .register-form__title {
