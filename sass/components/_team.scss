@@ -3,24 +3,28 @@
 }
 
 .team {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-direction: row;
     flex-wrap: wrap;
-  }
-  @media screen and (min-width: 1200px) {
-    flex-direction: row;
   }
 }
 
 .team__item {
+  text-align: center;
   box-shadow: var(--box-shadow-tm);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--main-bg-cl);
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc((100% - 30px) / 2);
