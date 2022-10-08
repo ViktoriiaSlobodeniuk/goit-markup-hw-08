@@ -1501,14 +1501,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 18px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
-}
-@media screen and (max-width: 460px) {
-  .mobile-socials {
-    font-size: smaller;
-  }
 }
 @media screen and (min-width: 768px) {
   .mobile-socials {
