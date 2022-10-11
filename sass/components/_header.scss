@@ -1,10 +1,11 @@
 .header {
   border-bottom: 1px solid var(--top-border-line-cl);
+}
 
-  &__container {
-    display: flex;
-    align-items: center;
-  }
+.header__container {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .contacts {
@@ -30,6 +31,7 @@
   @media screen and (min-width: 1200px) {
     flex-direction: row-reverse;
     align-items: center;
+    gap: 30px;
   }
 }
 

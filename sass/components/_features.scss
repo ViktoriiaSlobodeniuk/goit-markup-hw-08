@@ -35,6 +35,10 @@
   line-height: calc(16 / 14);
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .features__text {
   color: var(--secondary-txt-cl);
